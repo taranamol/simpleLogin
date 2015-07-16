@@ -52,6 +52,11 @@ app.use('/', function (req, res, next) {
   next();
 });
 
+// login route (renders login view)
+app.get('/login', function (req, res) {
+  res.render('login');
+});
+
 // signup route with placeholder response
 app.get('/signup', function (req, res) {
   res.send('coming soon');
